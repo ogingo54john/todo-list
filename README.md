@@ -19,6 +19,35 @@ A simple To-Do List REST API built with **Node.js**, **Express**, and **MySQL**.
 - Add, update, and delete activities under each to-do item.
 - Retrieve activities by a specific to-do title.
 
+## Code Structure 
+I have arranged my codes in a MVC structure as shown below
+```bash
+    todo-list/
+│
+├── config/
+│   ├── db.js          # Database configuration
+│   ├── envf.txt         # Sample environment variables file
+│   └── todo.sql       # SQL file for creating the database tables
+│
+├── controllers/
+│   ├── activityController.js   # Handles activity-related API requests
+│   └── todoController.js       # Handles to-do-related API requests
+│
+├── models/
+│   ├── activityModel.js   # Activity model and database operations
+│   └── todoModel.js       # To-do model and database operations
+│
+├── routes/
+│   ├── activityRoutes.js   # Activity-related routes
+│   └── todoRoutes.js       # To-do-related routes
+│
+├── .env                   # Environment variables file (created from .envf)
+├── index.js                 # Main entry point for the application
+├── package.json           # Project dependencies and scripts
+└── README.md              # Project documentation (this file)
+
+```
+
 ## Installation
 
 1. **Clone the Repository**:
